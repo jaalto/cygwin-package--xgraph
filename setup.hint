@@ -1,0 +1,12 @@
+sdesc: "Plotting program, reads stdin, allows interactive zooming"
+ldesc: "Accepts data files or stdin in a form similar to the unix program
+graph and displays line graphs, scatter plots, or bar charts on an X11
+display. Fully annotated with title, axis numbering and labels, and
+legend. Zooming with the mouse is supported. Can generate hardcopy
+output to Postscript printers and HPGL plotters. Output can be
+directly pasted into idraw (drawtool) for further annotation.
+Particularly useful in shell scripts. Also see "ygraph" which is a
+similar tool using an attractive albeit slower modern graphics
+library, which is under active maintenance and development"
+category: X11
+requires: cygwin xorg-x11-base

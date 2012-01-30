@@ -1,0 +1,86 @@
+xgraph
+------------------------------------------
+
+Plotting program, reads stdin, allows interactive zooming
+
+Accepts data files or stdin in a form similar to the unix program
+graph and displays line graphs, scatter plots, or bar charts on an X11
+display. Fully annotated with title, axis numbering and labels, and
+legend. Zooming with the mouse is supported. Can generate hardcopy
+output to Postscript printers and HPGL plotters. Output can be
+directly pasted into idraw (drawtool) for further annotation.
+Particularly useful in shell scripts. Also see "ygraph" which is a
+similar tool using an attractive albeit slower modern graphics
+library, which is under active maintenance and development.
+
+Runtime requirements:
+  cygwin
+
+Build requirements:
+  cygwin
+
+Canonical homepage:
+  http://www.isi.edu/nsnam/xgraph/
+  http://packages.debian.org/xgraph
+  http://www.cs.utoronto.ca/%7Eradford/xgraph.html
+
+Canonical download:
+  See above. The Debian and ISI pages are most up to date.
+
+Version control repository:
+
+Mailing list:
+  <ns-users@isi.edu>
+
+IRC channel:
+
+Upstream contact:
+  Author: Radford Neal <radford@cs.toronto.edu>
+  Bugs: <ns-users@isi.edu>
+
+License:
+  GPL
+
+Language:
+  C
+
+------------------------------------
+
+Build instructions:
+  unpack xgraph-12.1-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  ./xgraph*.sh all
+
+This will create:
+  xgraph-12.1-1.tar.bz2
+  xgraph-12.1-1-src.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary distribution:
+
+usr/bin/xgraph.exe
+usr/share/doc/Cygwin/xgraph-12.1.README
+usr/share/doc/xgraph-12.1/INSTALL
+usr/share/doc/xgraph-12.1/README
+usr/share/doc/xgraph-12.1/README.ANNOUNCE
+usr/share/doc/xgraph-12.1/README.GENERAL
+usr/share/doc/xgraph-12.1/README.HARDCOPY
+usr/share/doc/xgraph-12.1/README.INSTALL
+usr/share/doc/xgraph-12.1/README.NEWFEATURES
+usr/share/man/man1/xgraph.1x.gz
+
+------------------
+
+Port Notes:
+
+----- version 12.1-2 -----
+- New maintainer, 2007-08-14 Jari Aalto
+- Makefile.in: (install-manm) Corrected install to man1/*.1x
+
+----- version 12.1-1 -----
+- Initial release Harold L Hunt II
+
+Cygwin port maintained by: Jari Aalto <jari dt aalto A T cante dt net>
