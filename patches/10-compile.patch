@@ -1,0 +1,57 @@
+---
+ dialog.c |    4 ++--
+ idraw.c  |    1 +
+ tgif.c   |    1 +
+ xtb.c    |    1 +
+ 4 files changed, 5 insertions(+), 2 deletions(-)
+
+--- a/dialog.c
++++ b/dialog.c
+@@ -777,7 +777,7 @@ xtb_frame *frame;		/* Returned frame */
+     memset(new_info->lines, 0, sizeof(Window) * E_LINES);
+ 
+     lineptr = text;
+-    while (getline(&lineptr, line)) {
++    while (mygetline(&lineptr, line)) {
+ 	if (new_info->num_lines >= new_info->alloc_lines) {
+ 	    int old_alloc_lines_size = new_info->alloc_lines * sizeof(Window);
+ 	    new_info->alloc_lines *= 2;
+@@ -888,7 +888,7 @@ char   *err_text;
+ 
+ 
+ int 
+-getline(tptr, lptr)
++mygetline(tptr, lptr)
+ char  **tptr;
+ char   *lptr;
+ 
+--- a/idraw.c
++++ b/idraw.c
+@@ -6,6 +6,7 @@
+  * David Harrison
+  */
+ 
++#include <string.h>
+ #include <stdio.h>
+ #include <X11/Xlib.h>
+ #include "hard_devices.h"
+--- a/tgif.c
++++ b/tgif.c
+@@ -4,6 +4,7 @@
+  * Christos Zoulas
+  */
+ 
++#include <string.h>
+ #include <stdio.h>
+ #include <X11/Xlib.h>
+ #include "hard_devices.h"
+--- a/xtb.c
++++ b/xtb.c
+@@ -15,6 +15,7 @@
+ #include <X11/Xos.h>
+ #include <X11/Xlib.h>
+ #include <X11/Xutil.h>
++#include <stdio.h>
+ #include <string.h>  /* for strcpy */
+ #include "xtb.h"
+ 
