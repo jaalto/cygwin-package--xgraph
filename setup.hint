@@ -5,8 +5,6 @@ display. Fully annotated with title, axis numbering and labels, and
 legend. Zooming with the mouse is supported. Can generate hardcopy
 output to Postscript printers and HPGL plotters. Output can be
 directly pasted into idraw (drawtool) for further annotation.
-Particularly useful in shell scripts. Also see "ygraph" which is a
-similar tool using an attractive albeit slower modern graphics
-library, which is under active maintenance and development"
+Particularly useful in shell scripts."
 category: X11
-requires: cygwin xorg-x11-base
+requires: libX11_6 libXau6 libXdmcp6 libxcb1
